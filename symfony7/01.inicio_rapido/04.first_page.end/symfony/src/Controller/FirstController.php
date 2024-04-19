@@ -6,14 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;
 
-class FirstPageController extends AbstractController
+class FirstController extends AbstractController
 {
-    #[Route('/first/page', name: 'app_first_page')]
+    #[Route('/first', name: 'app_first')]
     public function index(): JsonResponse
     {
         return $this->json([
             'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/FirstPageController.php',
+            'path' => 'src/Controller/FirstController.php',
         ]);
     }
 }

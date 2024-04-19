@@ -37,7 +37,7 @@ services:
       - ./symfony:/var/www/symfony/
       - ./log/nginx:/var/log/nginx
     ports:
-      - 80:80
+      - 81:80
     networks:
       - symfony
     env_file:
