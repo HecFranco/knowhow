@@ -1,4 +1,4 @@
-.env.dist
+.env
 .env.nginx.dist
 .data/*
 log/*

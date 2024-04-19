@@ -1,6 +1,0 @@
-# src/Resources/config/routing.yaml
-articles:
-  # loads routes from the given routing file stored in some bundle
-  prefix: '/blog/article_'
-  resource: 'article/'
-  type: directory
