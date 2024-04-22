@@ -43,7 +43,7 @@
         ]
     },
     "symfony/maker-bundle": {
-        "version": "1.58",
+        "version": "1.57",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",

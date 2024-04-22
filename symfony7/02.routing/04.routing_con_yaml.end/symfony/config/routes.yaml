@@ -3,33 +3,3 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
-
-
-# match /fist
-#index:
-first_page:
-#    path: /
-  path: /first
-#    controller: App\Controller\DefaultController::index
-  controller: App\Controller\FirstController::index
-
-# Matches /article/en/2010/my-post
-# Matches /article/fr/2010/my-post.rss
-# Matches /article/en/2013/my-latest-post.html
-article_v1:
-  path: /article/{_locale}/{year}/{slug}.{_format}
-  controller: App\Controller\ArticleController::index
-  defaults:
-    _format: html
-  requirements:
-    _locale: en|fr
-    _format: html|rss
-    year: \d+
-
-# Matches /blog/article_/en/2010/my-post
-# Matches /blog/article_/fr/2010/my-post.rss
-# Matches /blog/article_/en/2013/my-latest-post.html
-routing_distributed_v1:
-  # loads routes from the given routing file stored in some bundle
-  resource: '../src/Resources/config/routing.yaml'
-  type: yaml
